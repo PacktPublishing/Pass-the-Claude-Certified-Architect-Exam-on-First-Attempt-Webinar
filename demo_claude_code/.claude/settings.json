@@ -1,0 +1,19 @@
+{
+  "enabledMcpjsonServers": ["support"],
+  "permissions": {"allow": ["mcp__support"]},
+  "hooks": {
+    "PreToolUse": [
+      {"matcher": "mcp__support__lookup_order|mcp__support__process_refund",
+       "hooks": [{"type": "command",
+                  "command": "python3 .claude/hooks/gate.py verify"}]},
+      {"matcher": "mcp__support__process_refund",
+       "hooks": [{"type": "command",
+                  "command": "python3 .claude/hooks/gate.py limit"}]}
+    ],
+    "PostToolUse": [
+      {"matcher": "mcp__support__get_customer",
+       "hooks": [{"type": "command",
+                  "command": "python3 .claude/hooks/gate.py record"}]}
+    ]
+  }
+}

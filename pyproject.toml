@@ -1,0 +1,13 @@
+[project]
+name = "ccarf-starter-kit"
+version = "0.1.0"
+description = "CCAR-F starter kit: prompts ask, hooks enforce. A runnable demo and a study skill."
+requires-python = ">=3.10"
+dependencies = [
+    "claude-agent-sdk>=0.2.157",
+    "mcp>=1.23,<2",
+    "python-dotenv",
+]
+
+[tool.uv]
+package = false

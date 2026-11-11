@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "support": {
+      "command": "uv",
+      "args": ["run", "--project", "..", "python", "server.py"]
+    }
+  }
+}
