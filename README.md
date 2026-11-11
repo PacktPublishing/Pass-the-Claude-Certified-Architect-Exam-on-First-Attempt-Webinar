@@ -24,8 +24,8 @@ You need Python 3.10 or later, [uv](https://docs.astral.sh/uv/) and
 [Claude Code](https://code.claude.com/docs/en/overview).
 
 ```bash
-git clone REPO_URL ccarf-starter-kit
-cd ccarf-starter-kit
+git clone https://github.com/PacktPublishing/Pass-the-Claude-Certified-Architect-Exam-on-First-Attempt-Webinar
+cd Pass-the-Claude-Certified-Architect-Exam-on-First-Attempt-Webinar
 uv sync
 cp .env.example .env
 ```
